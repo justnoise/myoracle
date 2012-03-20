@@ -1,0 +1,14 @@
+myoracle.py, a little script for interactive querying of Oracle DBs.
+features: readline and mysql-like output formatting.
+
+Contact: Brendan Cox
+Antispambot email: ''.join(['just', 'noise', '@', 'gmail', '.com'])
+ 
+Bugs: This isn't super efficient for very large result sets (> 10,000
+rows).  I'm not planning on optimizing for larger result sets since
+this for use on the console and most people keep their console output
+to <= 10,000 rows.  Besides, who wants to pick through > 1,000 rows on
+the command line (OK, I sometimes do...)?  Anyways, I've hardcoded the
+DB class to only return 10,000 rows.  This prevents users from
+watching millions of rows scroll by.  If you want something different,
+change it and test it.
